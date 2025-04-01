@@ -1,6 +1,8 @@
 ## testing
 
-This is to test providing an auth-admin app for sql-based security, using `ui/admin/admin_loader.py` as provided by Thomas.
+This is to test providing an auth-admin app for sql-based security, using
+1. `ui/admin/admin_loader.py` as provided by Thomas,
+2. `api/expose_api_models.py` to expose auth models (which breaks BLT, btw)
 
 
 Established security:
@@ -8,8 +10,7 @@ Established security:
 als add-auth --provider-type=sql
 ```
 
-T
-for
+It works for:
 1. sql auth-admin at: http://127.0.0.1:5656/01/auth-admin/index.html
 2. " " as docker app
 
